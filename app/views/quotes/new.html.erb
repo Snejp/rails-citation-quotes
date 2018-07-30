@@ -1,0 +1,18 @@
+<div class="container">
+
+  <%= form_with scope: :quotes, url: quotes_path, local: true do |form| %>
+    <h2 class="form-signin-heading">Please add new quote</h2>
+    <br>
+
+    <p>
+      <%= form.text_area :text, :style => "asdasd" %>
+    </p>
+   
+      <!-- <%= form.submit %>  -->
+      <button class="btn btn-primary" type="submit">Submit</button><br>
+      <%= link_to 'Back', root_path, :class => "btn" %>
+
+    
+  <% end %>
+
+</div> <!-- /container -->
