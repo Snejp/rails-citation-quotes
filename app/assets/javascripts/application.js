@@ -14,3 +14,17 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+  $(".btn")
+  .mousedown(function(event) {
+    var self = $(this);
+    self.addClass("active");
+    $(document).one("mouseup", function() {
+      $(".btn").removeClass("active");
+      self[0].click();
+    });
+  });
+});
+
+_386 = { fastLoad: true };

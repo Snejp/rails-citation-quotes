@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+a {
+  cursor: pointer !important; 
+}
+form {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  border: 1px solid #e5e5e5;
+}
+form textarea {
+  width: 300px;
+  height: 100px;
+}
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}

@@ -8,41 +8,16 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-      form {
-        max-width: 300px;
-        padding: 19px 29px 29px;
-        margin: 0 auto 20px;
-        border: 1px solid #e5e5e5;
-      }
-      form textarea {
-        width: 300px;
-        height: 100px;
-      }
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-    </style>
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript">
-      _386 = { fastLoad: true };
-    </script>
+
     <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
