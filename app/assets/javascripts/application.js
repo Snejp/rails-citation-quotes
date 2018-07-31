@@ -15,12 +15,14 @@
 $(function() {
   $(".btn")
   .mousedown(function(event) {
-    var self = $(this);
-    self.addClass("active");
-    $(document).one("mouseup", function() {
-      $(".btn").removeClass("active");
-      self[0].click();
-    });
+    if (event.which === 1) {
+      var self = $(this);
+      self.addClass("active");
+      $(document).one("mouseup", function() {
+        $(".btn").removeClass("active");
+        self[0].click();
+      });
+    }
   });
 });
 
