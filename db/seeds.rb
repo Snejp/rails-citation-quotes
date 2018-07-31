@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+drWho = Quote.create([{ text: '“You want weapons? We’re in a library! Books! The best weapons in the world!” — The Doctor, Season 2, Episode 2'}])
